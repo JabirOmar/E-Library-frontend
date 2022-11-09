@@ -1,14 +1,40 @@
 import React, { Component } from 'react'
 import { BsCheckCircleFill, BsExclamationCircleFill } from 'react-icons/bs'
 import './add-books.css'
-
+import axios from 'axios';
 class AddBook extends Component {
-    
+    constructor(props) {
+        super(props);
+     
+
+     this.state = {
+        title: String,
+        author: String,
+        description: String,
+        pages: Number
+     };
+    };
     // Start your code here
     // rconst,
     // props and axios
+   
 
   render() {
+    
+
+    const addBook = {
+        title: String, 
+        author: String, 
+        description: String, 
+        pages: Number,
+    };
+    axios.post('https://rocky-river-97920.herokuapp.com/books', addBook)
+    .then(response =>{ this.setState({
+        books: response.data
+    })
+    // console.log(response.data)
+})
+    
 
     const bookFocus = () => {
         const bookLabel = document.getElementById('book_label')
@@ -98,6 +124,8 @@ class AddBook extends Component {
 
     const submitHandler = (e) => {
         e.preventDefault()
+        // onSubmit
+        
     }
     
 
