@@ -17,10 +17,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.8s;
 }
 
 body.dark .home_image_conainer {
-    box-shadow: rgba(123, 123, 246, 0.25) 0px 13px 27px -5px, rgba(123, 123, 246, 0.3) 0px 8px 16px -8px;
+    background-image: url(../../Images/book08.jpg);
+    box-shadow: rgb(47, 79, 79, 0.4) 0px 13px 27px -5px, darkslategray 0px 8px 16px -8px;
 }
 
 .home_image_conainer h2 span {
@@ -71,6 +73,11 @@ body.dark .home_image_conainer {
     position: absolute;
     top: 0;
     font-size: 25px;
+    color: black;
+}
+
+body.dark .quotes h1 {
+    color: aliceblue;
 }
 
 .car_container {
@@ -94,5 +101,15 @@ body.dark .home_image_conainer {
     overflow: hidden;
     padding: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    background-color: #eee;
+}
+
+body.dark .card {
+    background-color: rgb(97, 105, 105);
+}
+
+.card p span {
+    font-weight: bold;
+    color: darkorange;
 }

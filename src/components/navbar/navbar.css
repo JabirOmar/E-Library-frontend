@@ -135,6 +135,10 @@ body.dark .nav_links ul li a.active {
     transition: all 0.8s;
 }
 
+body.dark .bar {
+    background-color: gold;
+}
+
 #menu_box.clicked .bar:nth-child(1) {
     transform: translateY(5.58px) rotate(135deg);
 }

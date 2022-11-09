@@ -35,12 +35,12 @@ function Home() {
 
         <div className='car_container'>
             <div className='card'>
-                <p>A book is a gift you can open again and again.</p>
+                <p>A book is a <span>gift</span> you can open again and again.</p>
+            </div>
+            <div className='card'>
+                <p>Keep reading it's one of the most <span>marvelous</span> adventures that anyone can have.</p>
             </div>
             <div className='card'></div>
-            <div className='card'>
-                <p>Keep reading it's one of the most marvelous adventures that anyone can have.</p>
-            </div>
             <div className='card'></div>
         </div>
       </div>
