@@ -25,7 +25,7 @@ export class BookList extends Component {
               <span className='main_title'>Description</span>
               <p>Political Book</p>
              </div>
-
+             
              <div>
               <span className='main_title'>Total pages</span>
               <p>300</p>
