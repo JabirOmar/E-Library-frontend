@@ -1,0 +1,33 @@
+
+.list_title {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.list_container {
+    margin-top: 3%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list_card {
+    width: 80%;
+    max-width: 900px;
+    /* height: 80px; */
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1%;
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.main_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+}

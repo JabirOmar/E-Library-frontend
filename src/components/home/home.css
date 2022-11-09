@@ -1,0 +1,98 @@
+
+.home_section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: orange; */
+    padding: 5% ;
+}
+
+.home_image_conainer {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../../Images/book07.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark .home_image_conainer {
+    box-shadow: rgba(123, 123, 246, 0.25) 0px 13px 27px -5px, rgba(123, 123, 246, 0.3) 0px 8px 16px -8px;
+}
+
+.home_image_conainer h2 span {
+    color: orange;
+}
+
+.srcoll_down_image_container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scroll_down_icon {
+    width: 50px;
+    height: auto;
+    color: darkorange;
+    animation: 1.1s scroll infinite alternate;
+}
+
+@keyframes scroll {
+    0% {
+            transform: translateY(10px);
+        }
+    
+        50% {
+            transform: translateY(0px);
+        }
+    
+        100% {
+            transform: translateY(10px);
+        }
+}
+
+.quotes {
+    position: relative;
+    width: 100%;
+    /* height: 50vh; */
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quotes h1 {
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+}
+
+.car_container {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
