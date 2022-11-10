@@ -1,26 +1,37 @@
-
 .list_title {
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
+}
+.list_title span {
+    color: darkorange;
 }
 
 .list_container {
-    margin-top: 3%;
+    margin-top: 5%;
     padding: 0 5%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
+}
+
+body.dark .list_title {
+    color: darkcyan;
 }
 
 .list_card {
     width: 80%;
     max-width: 900px;
+    margin-bottom: 30px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 1%;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+}
+
+body.dark .list_card {
+    border-color: darkcyan;
 }
 
 .main_title {
