@@ -36,6 +36,8 @@ function NavBar() {
                     <li><NavLink to='/book-list'>Book List</NavLink></li>
 
                     <li><NavLink to='/about'>About</NavLink></li>
+
+                    <li><NavLink to='/reviews'>Reviews</NavLink></li>
                 </ul>
             </div>
 
