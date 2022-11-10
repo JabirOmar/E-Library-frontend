@@ -15,12 +15,10 @@
 .list_card {
     width: 80%;
     max-width: 900px;
-    /* height: 80px; */
     border: 1px solid black;
     border-radius: 10px;
     padding: 1%;
     display: flex;
-    /* align-items: center; */
     text-align: center;
     justify-content: space-evenly;
 }
@@ -30,4 +28,42 @@
     font-weight: bold;
     color: darkorange;
     text-align: center;
+}
+
+body.dark .main_title {
+    color: gold;
+}
+
+.info p {
+    color: black;
+}
+
+body.dark .info p {
+    color: aliceblue;
+}
+
+.info span i {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .list_card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1% 10px;
+    }
+    .info {
+        display: flex;
+        gap: 20px;
+    }
+
+    .info span i {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list_card {
+        width: 100%;
+    }
 }
