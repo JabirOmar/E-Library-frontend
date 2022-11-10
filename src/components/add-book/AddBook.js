@@ -99,6 +99,16 @@ class AddBook extends Component {
 
     const submitHandler = (e) => {
         e.preventDefault()
+        const book = document.getElementById('book_input').value
+        const author = document.getElementById('author_input').value
+        const desc = document.getElementById('desc_input').value
+        const pages = document.getElementById('total_input').value
+        console.log('Book name = ' + book);
+        console.log('Author = ' + author);
+        console.log('Description = ' + desc);
+        console.log('Total pages = ' + pages);
+
+        alert('Completed')
     }
     
 
@@ -127,7 +137,7 @@ class AddBook extends Component {
             </div>
 
             <div className='submit_button'>
-                <button type='submit'>Submit</button>
+                <button  type='submit'>Submit</button>
             </div>
          </form>
       </div>

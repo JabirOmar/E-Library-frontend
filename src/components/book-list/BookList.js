@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './booklist.css'
+import books from '../../Books.json'
 
 export class BookList extends Component {
 
@@ -10,27 +11,35 @@ export class BookList extends Component {
           <h2>Book List</h2>
         </div>
         <div className='list_container'>
-          <div className='list_card'>
-             <div>
-              <span className='main_title'>Book Name</span>
-              <p>The King</p>
-             </div>
 
-             <div>
-              <span className='main_title'>Author</span>
-              <p>John</p>
-             </div>
+          {
+            books.map( book => {
+              return(
+                <div key={book.id} className='list_card'>
+                  <div className='info'>
+                    <span className='main_title'>Book Name<i> : </i></span>
+                    <p>{book.book_name}</p>
+                  </div>
 
-             <div>
-              <span className='main_title'>Description</span>
-              <p>Political Book</p>
-             </div>
-             
-             <div>
-              <span className='main_title'>Total pages</span>
-              <p>300</p>
-             </div>
-          </div>
+                  <div className='info'>
+                    <span className='main_title'>Author<i> : </i></span>
+                    <p>{book.Author}</p>
+                  </div>
+
+                  <div className='info'>
+                    <span className='main_title'>Description<i> : </i></span>
+                    <p>{book.Description}</p>
+                  </div>
+
+                  <div className='info'>
+                    <span className='main_title'>Total pages<i> : </i></span>
+                    <p>{book.total_pages}</p>
+                  </div>
+              </div> 
+              )
+            })
+          }
+
         </div>
       </div>
     )

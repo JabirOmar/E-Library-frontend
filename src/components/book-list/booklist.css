@@ -1,28 +1,35 @@
 
 .list_title {
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
 }
 
 .list_container {
-    margin-top: 3%;
+    margin-top: 5%;
     padding: 0 5%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+body.dark .list_title h2 {
+    color: darkcyan;
+}
+
 .list_card {
     width: 80%;
     max-width: 900px;
-    /* height: 80px; */
+    margin-bottom: 30px;
     border: 1px solid black;
     border-radius: 10px;
     padding: 1%;
     display: flex;
-    /* align-items: center; */
     text-align: center;
     justify-content: space-evenly;
+}
+
+body.dark .list_card {
+    border-color: darkcyan;
 }
 
 .main_title {
@@ -30,4 +37,42 @@
     font-weight: bold;
     color: darkorange;
     text-align: center;
+}
+
+body.dark .main_title {
+    color: gold;
+}
+
+.info p {
+    color: black;
+}
+
+body.dark .info p {
+    color: aliceblue;
+}
+
+.info span i {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .list_card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1% 10px;
+    }
+    .info {
+        display: flex;
+        gap: 20px;
+    }
+
+    .info span i {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list_card {
+        width: 100%;
+    }
 }

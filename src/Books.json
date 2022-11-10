@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "book_name": "The King",
+        "Author": "John",
+        "Description": "Political Book",
+        "total_pages": 300
+    },
+    {
+        "id": 2,
+        "book_name": "Ottoman Empire",
+        "Author": "Ibrahim",
+        "Description": "Historical Reminder",
+        "total_pages": 500
+    },
+    {
+        "id": 4,
+        "book_name": "Quran",
+        "Author": "Sahaba",
+        "Description": "Religiuos Book",
+        "total_pages": 624
+    }
+]
