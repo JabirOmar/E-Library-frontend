@@ -3,6 +3,9 @@
     margin-top: 10%;
     text-align: center;
 }
+.list_title span {
+    color: darkorange;
+}
 
 .list_container {
     margin-top: 5%;
@@ -12,7 +15,7 @@
     flex-direction: column;
 }
 
-body.dark .list_title h2 {
+body.dark .list_title {
     color: darkcyan;
 }
 

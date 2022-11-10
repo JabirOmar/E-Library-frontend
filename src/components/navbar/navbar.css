@@ -154,7 +154,7 @@ body.dark .bar {
 
 
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 660px) {
     #menu_box {
         display: block;
     }
