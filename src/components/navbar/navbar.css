@@ -161,11 +161,12 @@ body.dark .bar {
 
     .nav_links {
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: -80%;
+        width: 200px;
         padding: 20px 50px;
         border-radius: 20px;
-        background-color: #efefef;
+        background-color: #bbbbbb;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         align-items: center;
         justify-content: center;

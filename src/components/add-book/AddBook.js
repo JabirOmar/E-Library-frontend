@@ -267,7 +267,8 @@ function AddBook() {
 
   return (
     <div className="add-book-container">
-      <form onSubmit={submitHandler}>
+      <form className="form" onSubmit={submitHandler}>
+      
         <div className="form_div">
           <label className="label" id="book_label">
             Book Name
@@ -338,7 +339,7 @@ function AddBook() {
         </div>
 
         <div className="submit_button">
-          <button type="submit">Submit</button>
+          <button id="add_book_btn" type="submit">Submit</button>
         </div>
       </form>
     </div>
