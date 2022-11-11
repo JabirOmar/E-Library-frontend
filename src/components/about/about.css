@@ -8,6 +8,11 @@
     align-items: center;
     font-size: 25px;
     font-weight: 600;
+    color: rgb(41, 24, 1);
+}
+
+body.dark .about_section {
+    color: orange;
 }
 
 #horizontal_line {
@@ -36,7 +41,13 @@
     flex-direction: column;
     line-height: 30px;
     justify-content: center; 
+    color: rgb(41, 24, 1);
+    border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+body.dark .about_info {
+    color: antiquewhite;
 }
 
 .names {
