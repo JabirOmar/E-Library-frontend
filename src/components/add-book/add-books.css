@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-form {
+.form {
     width: 80%;
     max-width: 350px;
 }
@@ -55,7 +55,7 @@ body.dark .input {
     justify-content: center;
 }
 
-button {
+#add_book_btn {
     height: 40px;
     width: 80%;
     background-color: darkorange;
