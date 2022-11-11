@@ -1,8 +1,9 @@
 import React from 'react'
+import './reviews.css'
 
 function Reviews() {
   return (
-    <div>Reviews</div>
+    <div className='review_section'>Review Section</div>
   )
 }
 
