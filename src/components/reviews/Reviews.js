@@ -1,9 +1,24 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import { RiDoubleQuotesL, RiDoubleQuotesR  } from 'react-icons/ri'
 import user from '../../Images/user.png'
 import './reviews.css'
 
 function Reviews() {
+
+  const [reviews, setReviews] = useState([]);
+
+  const reviewsApi = 'https://rocky-river-97920.herokuapp.com/reviews'
+  useEffect( () => {
+
+    const getReviews = async () => {
+
+      const { data:res } = await axios.get(reviewsApi )
+      setReviews(res)
+    }
+    getReviews()
+  },[])
+
   return (
     <>
     <div className='review_section'>
@@ -13,44 +28,28 @@ function Reviews() {
 
     <div className='review_container'>
 
-      <div className='review_card'>
-        <div className='review_top'>
-          <img src={user} alt='' id='user'
-          />
-        </div>
-        <div className='review_center'>
-          <p> <RiDoubleQuotesL className='quote'/> is a placeholder text commonly used to demonstrate the visual form of a document or a typeface <RiDoubleQuotesR className='quote'/></p>
-        </div>
-        <div className='review_bottom'>
-          <p>The name</p>
-        </div>
-      </div>
+      {
+        reviews.map( review => {
+          return(
+            <div className='review_card' key={review.id}>
+              <div className='review_top'>
+                <img src={user} alt='' id='user'
+                />
+              </div>
+              <div className='review_center'>
+                <p> <RiDoubleQuotesL className='quote'/> {review.comments} <RiDoubleQuotesR className='quote'/></p>
+              </div>
+              <div className='review_bottom'>
+                <p>The name</p>
+              </div>
+            </div>
+          )
+        })
+      }
 
-      <div className='review_card'>
-        <div className='review_top'>
-          <img src={user} alt='' id='user'
-          />
-        </div>
-        <div className='review_center'>
-          <p> <RiDoubleQuotesL className='quote'/> is a placeholder text commonly used to demonstrate the visual form of a document or a typeface <RiDoubleQuotesR className='quote'/></p>
-        </div>
-        <div className='review_bottom'>
-          <p>The name</p>
-        </div>
-      </div>
 
-      <div className='review_card'>
-        <div className='review_top'>
-          <img src={user} alt='' id='user'
-          />
-        </div>
-        <div className='review_center'>
-          <p> <RiDoubleQuotesL className='quote'/> is a placeholder text commonly used to demonstrate the visual form of a document or a typeface <RiDoubleQuotesR className='quote'/></p>
-        </div>
-        <div className='review_bottom'>
-          <p>The name</p>
-        </div>
-      </div>
+
+      
       
     </div>
 
