@@ -19,6 +19,25 @@ function Reviews() {
     getReviews()
   },[])
 
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+
+  const commentSubmit = (e) => {
+
+    axios.post('https://jsonplaceholder.typicode.com/posts', {
+      name,
+      email
+    })
+    .then(res =>  console.log(res))
+    .catch(err => console.log(err))
+
+    const userName = document.getElementById('user_name').value;
+
+    alert(userName + ' now You are one of our members')
+
+  }
+
   return (
     <>
     <div className='review_section'>
@@ -54,29 +73,27 @@ function Reviews() {
     </div>
 
     <div className='contact_form_container'>
-      <section className='contact_form'>
+      <form className='contact_form' onSubmit={commentSubmit}>
 
         <div className='contact_title'>
           <h3> Become a member </h3><hr/>
         </div>
 
         <div className='contact_name contact_detail'>
-          {/* <label>Name</label> */}
-          <input className='contact_input' type='text' placeholder='Name' />
+          <input id='user_name' className='contact_input' type='text' placeholder='Name' required value={name} onChange={(e) => setName(e.target.value)}/>
         </div>
         <div className='contact_email contact_detail'>
-          {/* <label>Name</label> */}
-          <input className='contact_input' type='email' placeholder='Email' />
+          <input id='user_email' className='contact_input' type='email' placeholder='Email' required value={email} onChange={(e) => setEmail(e.target.value)}/>
         </div>
         <div className='contact_comment contact_detail'>
-          <textarea maxLength={100} placeholder="Do you have any comment...">
+          <textarea maxLength={100} placeholder="Do you have any comment..." >
           </textarea>
         </div>
 
         <div className='contact_button_container'>
           <button id='contact_submit_btn' type='submit'>Submit</button>
         </div>
-      </section>
+      </form>
     </div>
 
     </>
