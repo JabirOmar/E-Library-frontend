@@ -25,7 +25,7 @@ function Reviews() {
 
   const commentSubmit = (e) => {
 
-    axios.post('https://jsonplaceholder.typicode.com/posts', {
+    axios.post('https://rocky-river-97920.herokuapp.com/users', {
       name,
       email
     })
