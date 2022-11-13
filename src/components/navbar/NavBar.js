@@ -29,7 +29,7 @@ function NavBar() {
         <div className='right_nav'>
             <div className='nav_links'>
                 <ul>
-                    <li><NavLink to=''>Home</NavLink></li>
+                    <li><NavLink to='/'>Home</NavLink></li>
 
                     <li><NavLink to='/add-book'>Add Book</NavLink></li>
 

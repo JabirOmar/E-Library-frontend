@@ -59,7 +59,7 @@ function Reviews() {
                 <p> <RiDoubleQuotesL className='quote'/> {review.comments} <RiDoubleQuotesR className='quote'/></p>
               </div>
               <div className='review_bottom'>
-                <p>The name</p>
+                <p>name</p>
               </div>
             </div>
           )
